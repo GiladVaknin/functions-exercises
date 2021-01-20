@@ -42,21 +42,21 @@ function myPower(x, n) {
 }
 
 //Question 5
-// function getFirstNotRepeating(str) {
-//   let first;
+function getFirstNotRepeating(str) {
+  let first;
 
-//   for (let i = 0; i < str.length; i++) {
-//     for (let j = i + 1; j < str.length; j++) {
-//       if (str[i] === str[j]) {
-//         i++;
-//       } else if (j === str.length - 1 && str[i] != str[j]) {
-//         first = str[i];
-//         return first;
-//       }
-//     }
-//   }
-//   return "";
-// }
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        i++;
+      } else if (j === str.length - 1 && str[i] != str[j]) {
+        first = str[i];
+        return first;
+      }
+    }
+  }
+  return "";
+}
 
 //Question 6 (Bonus)
 function isPrefectNumber(num) {

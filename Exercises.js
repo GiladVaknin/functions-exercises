@@ -8,18 +8,18 @@ function myReverse(str) {
 }
 
 //Question 2
-// function allCombinations(str) {
-//   let combinations = [];
-//   for (let i = 0; i < str.length; i++) {
-//     combinations.push(str[i]);
-//     let str2 = str[i];
-//     for (let j = i + 1; j < str.length; j++) {
-//       combinations.push(str2 + str[j]);
-//       str2 = str2 + str[j];
-//     }
-//   }
-//   return combinations;
-// }
+function allCombinations(str) {
+  let combinations = [];
+  for (let i = 0; i < str.length; i++) {
+    combinations.push(str[i]);
+    let str2 = str[i];
+    for (let j = i + 1; j < str.length; j++) {
+      combinations.push(str2 + str[j]);
+      str2 = str2 + str[j];
+    }
+  }
+  return combinations;
+}
 
 //Question 3
 // function allCaps(str) {

@@ -37,9 +37,9 @@ function allCaps(str) {
 }
 
 //Question 4
-// function myPower(x, n) {
-//   return Math.pow(x, n);
-// }
+function myPower(x, n) {
+  return Math.pow(x, n);
+}
 
 //Question 5
 // function getFirstNotRepeating(str) {

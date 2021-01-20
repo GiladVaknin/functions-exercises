@@ -1,33 +1,60 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed = reversed + str[i];
+  }
+  return reversed;
 }
 
 //Question 2
 function allCombinations(str) {
   let combinations = [];
-  // your code here
-
-  //
+  for (let i = 0; i < str.length; i++) {
+    combinations.push(str[i]);
+    let str2 = str[i];
+    for (let j = i + 1; j < str.length; j++) {
+      combinations.push(str2 + str[j]);
+      str2 = str2 + str[j];
+    }
+  }
   return combinations;
 }
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  let str2 = str[0].toUpperCase();
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === " ") {
+      str2 += " ";
+      str2 = str2 + str[i + 1].toUpperCase();
+      i++;
+    } else {
+      str2 = str2 + str[i];
+    }
+  }
+  return str2;
 }
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  return Math.pow(x, n);
 }
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
+  let first;
+
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        i++;
+      } else if (j === str.length - 1 && str[i] != str[j]) {
+        first = str[i];
+        return first;
+      }
+    }
+  }
   return "";
 }
 

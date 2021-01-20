@@ -22,19 +22,19 @@ function allCombinations(str) {
 }
 
 //Question 3
-// function allCaps(str) {
-//   let str2 = str[0].toUpperCase();
-//   for (let i = 1; i < str.length; i++) {
-//     if (str[i] === " ") {
-//       str2 += " ";
-//       str2 = str2 + str[i + 1].toUpperCase();
-//       i++;
-//     } else {
-//       str2 = str2 + str[i];
-//     }
-//   }
-//   return str2;
-// }
+function allCaps(str) {
+  let str2 = str[0].toUpperCase();
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === " ") {
+      str2 += " ";
+      str2 = str2 + str[i + 1].toUpperCase();
+      i++;
+    } else {
+      str2 = str2 + str[i];
+    }
+  }
+  return str2;
+}
 
 //Question 4
 // function myPower(x, n) {
